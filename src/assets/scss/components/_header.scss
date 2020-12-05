@@ -1,0 +1,57 @@
+.dp-header{
+	background-color: #fff;
+	padding: 15px 15px 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include breakpoint(large){
+		padding: 0;
+	}
+
+	.off-canvas{
+		nav{
+			.menu{
+				padding: 20px 0 30px 0;
+				li{
+					a{
+						font-family: 'Technique Sans';
+						color: #000000;
+						font-size: 22px;
+		
+						&:hover{
+							color: #628FAF;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.dp-logo{
+		@include breakpoint(small){
+			width: 116px;
+			height: 25.65px;
+		}
+	}
+
+	.dp-main-menu{
+		margin: 0 15px;
+
+		li{
+			a{
+				font-family: 'Technique Sans';
+				color: #000000;
+				font-size: 22px;
+
+				&:hover{
+					color: #628FAF;
+				}
+			}
+		}
+
+		li + li{
+			margin-left: 80px; 
+		}
+	}
+}
